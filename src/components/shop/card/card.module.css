@@ -1,0 +1,91 @@
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 0px 8px;
+    gap: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    color: #303132;
+    font-size: 16px;
+    font-family: raleway;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px #e5e5e5;
+}
+.imgContainer{
+    height: 250px;
+    width: 250px;
+}
+
+.imgContainer img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.flexContainer img{
+    border-radius: 5px;
+}
+.flexContainer input {
+    outline: none;
+    border: none;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    min-width: 0;
+
+}
+.flexContainer input:hover, button:hover {
+    color: pink;
+    outline: none;
+    border: none;
+}
+.flexContainer input:focus,
+.flexContainer input:focus-visible, button:focus, button:focus-visible {
+    outline: none;
+    border: none;
+}
+
+
+.flexContainer input:focus::placeholder{
+    color:transparent;
+}
+.amountContainer{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #303132;
+    font-size: 32px;
+    padding: 1px 1px;
+    border: none;
+    outline: none;
+}
+
+.input{
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    background-color: #e5e5e5;
+    color: white;
+}
+.input:hover, .input:focus, .input:focus-visible{
+    border: 1px solid pink;
+}
+
+.cardPrice{
+    font-weight: 300;
+}

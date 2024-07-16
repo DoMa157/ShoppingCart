@@ -1,0 +1,39 @@
+.homeBigText{
+    font-size: 32px;
+    font-weight: 600;
+    color:#303132;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.textContainer{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    color: white;
+    background-color: #e5e5e5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgContainer{
+    display: flex;
+}
+
+.imgContainer img{
+    width: 100vw;
+    object-fit: cover;
+}
+p{
+    padding: 0;
+    margin: 0;
+    color: #303132;
+    font-family: raleway;
+    font-weight: 300;
+    font-size: 24px;
+}

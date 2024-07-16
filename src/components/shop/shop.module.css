@@ -1,0 +1,14 @@
+.gridContainer{
+    display: grid;
+    margin-left: 128px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 20%));
+    grid-template-rows: max-content;
+}
+
+.title{
+    padding: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #535151;
+    font-size: 32px;
+    font-weight: 600;
+}
