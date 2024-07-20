@@ -17,7 +17,7 @@ export default function Header({ cart, itemsAmounts, searchFunction }) {
         Fashion Gallery
       </div>
       <div className={styles.flexContainer}>
-        <Link to="home" className={styles.headerBtn}>
+        <Link to="/" className={styles.headerBtn}>
           Home
         </Link>
         <Link to="shop" className={styles.headerBtn}>

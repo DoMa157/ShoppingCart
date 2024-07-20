@@ -1,10 +1,11 @@
 import styles from './home.module.css'
 import Header from '../header/header'
+import img from '../../assets/wide.webp'
 export default function Home({amount}){
     return (
         <div className = {styles.flexContainer}>
             <div className = {styles.imgContainer}>
-                <img src = 'src\assets\wide.webp' alt = "model wearing beige" height = "601"></img>
+                <img src = {img} alt = "model wearing beige" height = "601"></img>
             </div>
         <div className={styles.textContainer}>
             <div className={styles.homeBigText}>
