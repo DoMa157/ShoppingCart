@@ -2,12 +2,12 @@ import styles from "./header.module.css";
 import shoppingCart from "../../assets/shopping-bag.svg";
 import search from "../../assets/search.svg";
 import { Link } from "react-router-dom";
-export default function Header({ cart, current }) {
+export default function Header({ cart, itemsAmounts, searchFunction }) {
   const cartAmount = function () {
-    const cartList = Object.keys(cart);
     let sum = 0;
-    for (let i = 0; i < cartList.length; i++) {
-      sum += cart[cartList[i]].amount;
+    let newCart = [...cart];
+    for (let i = 0; i < newCart.length; i++) {
+      sum += itemsAmounts[newCart[i]];
     }
     return sum;
   };
@@ -17,10 +17,10 @@ export default function Header({ cart, current }) {
         Fashion Gallery
       </div>
       <div className={styles.flexContainer}>
-        <Link to={current == "shop" ? "/" : "home"} className={styles.headerBtn}>
+        <Link to="home" className={styles.headerBtn}>
           Home
         </Link>
-        <Link to={current == "shop" ? "" : "shop"} className={styles.headerBtn}>
+        <Link to="shop" className={styles.headerBtn}>
           Shop
         </Link>
         <div className={styles.flexContainer}>
@@ -28,12 +28,13 @@ export default function Header({ cart, current }) {
               className={styles.inputField}
               type="text"
               placeholder="Search for an item..."
+              onChange={searchFunction}
             ></input>
             <img src={search} width="25px"></img>
         </div>
-        <Link to =  "/" className={styles.imgBtn}>
+        <Link to =  "cart" className={styles.imgBtn}>
           <img src={shoppingCart} width="25px"></img>
-          <div>{cart == undefined ? 0 : cartAmount()}</div>
+          <div>{cartAmount()}</div>
         </Link>
       </div>
     </div>

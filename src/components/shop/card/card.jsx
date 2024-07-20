@@ -3,7 +3,7 @@ export default function Card({title, img, price,onChange, decrement, increment, 
 
     return (
         <div className={styles.flexContainer}>
-            <div className={styles.imgContainer}><img src = {img}></img></div>
+            <div className={styles.imgContainer}><img src = {img}/></div>
             <div>
                 <div className={styles.cardTitle}>{title}</div>
                 <div className = {styles.cardPrice}>${price}</div>

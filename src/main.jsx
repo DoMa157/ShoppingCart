@@ -5,10 +5,11 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Shop from './components/shop/shop.jsx'
 import Home from './components/home/home.jsx'
+import Cart from './components/cart/cart.jsx'
 const router = createBrowserRouter([
   {
     path : "/",
-    element: <App/>,
+    element: <App amount = '20'/>,
     children: [
     {
       path: "shop",
@@ -16,6 +17,9 @@ const router = createBrowserRouter([
     },
     {path: "home",
       element: <Home/>
+    },
+    {path: "cart",
+      element: <Cart/>
     }
   ]
   },
