@@ -28,7 +28,6 @@ export default function Header({ cart, itemsAmounts, searchFunction }) {
               className={styles.inputField}
               type="text"
               placeholder="Search for an item..."
-              onChange={searchFunction}
             ></input>
             <img src={search} width="25px"></img>
         </div>

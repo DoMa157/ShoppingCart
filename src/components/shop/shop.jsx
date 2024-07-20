@@ -10,7 +10,7 @@ export default function Shop(){
     const loading = (items == undefined);
     if(loading) return (<p>loading...</p>)
     return (
-        <>
+        <div className = {styles.parentContainer}>
         <div className = {styles.title}>
             SHOP
         </div>
@@ -19,6 +19,6 @@ export default function Shop(){
             <Card key = {item.id} title = {item.title} img = {item.image} price = {item.price} onChange={(e) => changeItemAmount(e, item.id)} increment = {(e) => incrementItemAmount(e, item.id)} decrement={(e) => decrementItemAmount(e, item.id)} value = {itemsAmounts[item.id] || ''}></Card>
         )}
         </div>
-        </>
+        </div>
     )
 }

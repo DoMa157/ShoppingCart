@@ -20,8 +20,7 @@
 .headerFlexContainer{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 16px;
+    justify-content: space-between;
     background-color: #535151;
     position: sticky;
     top: 0;
@@ -51,6 +50,8 @@
     border: 1px solid #d3d3d3;
     background-color: #535151;
     color: white;
+    min-width: 0;
+    width: 100%;
 }
 .inputField:hover, .inputField:focus, .inputField:focus-visible{
     border: 1px solid pink;
@@ -63,4 +64,14 @@
     composes: headerBtn;
     padding: 4px 6px;
     background-color: #535151;
+}
+
+
+@media (max-width: 660px){
+    .flexContainer{
+        gap: 4px;
+    }
+    .headerFlexContainer :first-child{
+        font-size: 18px;
+    }
 }

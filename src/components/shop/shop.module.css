@@ -1,8 +1,9 @@
 .gridContainer{
     display: grid;
-    margin-left: 128px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 20%));
-    grid-template-rows: max-content;
+    width: 100vw;
+    margin-left: 25px;
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: center;
 }
 
 .title{
@@ -11,4 +12,11 @@
     color: #535151;
     font-size: 32px;
     font-weight: 600;
+}
+
+.parentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
 }
